@@ -1,0 +1,18 @@
+<% layout('/layouts/boilerPlate.ejs') -%>
+<title>SpaceX - Dragon</title>
+<style>
+  .heropage{
+    background-image: url(/images/dragon_feature.jpg);
+  }
+</style>
+<link rel="stylesheet" href="style copy.css">
+<body>
+  <div class="heropage">
+    <%- include('../includes/navbar.ejs') %>
+    <div class='console-container'>
+      <div class='title'>DRAGON</div><br>
+      <div class='subtitle'>Sending Humans and Cargo Into Space</div>
+    </div>
+  </div>
+  <%- include('../includes/footer.ejs') %>
+</body>

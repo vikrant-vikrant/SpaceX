@@ -1,0 +1,72 @@
+<% layout('/layouts/boilerPlate') -%>
+<title>SpaceX</title>
+<link rel="stylesheet" href="style.css">
+<body>
+  <div class="heropage">
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <a title="SpaceX Logo" class="navbar-brand" href="/home"><img src="./images/fullLogo.png" alt="SpaceX's logo"></a>
+        </div>
+        <div class="navbar-nav">
+          <a class="nav-link" href="/falcon9">FALCON 9</a>
+            <a class="nav-link" href="/falconheavy">FALCON HEAVY</a>
+            <a class="nav-link" href="/dragon">DROGAN</a>
+            <a class="nav-link" href="/starshtip">STARSHIP</a>
+            <a class="nav-link" href="/humanspaceflight">HUMAN SPACEFLITE</a>
+            <a class="nav-link" href="/rideshare">RIDESHARE</a>
+            <a class="nav-link" href="/starshield">STARSHIELD</a>
+            <a class="nav-link" href="/starlink">STARLINK</a>
+        </div>
+        <div class="navbar-nav menu">
+          <a class="nav-link" href="#">SHOP</a>
+          <a href="#" class="nav-link"><i class="fa-solid fa-bars"></i></a>
+        </div>
+      </div>
+    </nav>
+    <div class='console-container'>
+      <div class="event"><p>UPCOMING EVENTS</p></div>
+      <span id='text'></span>
+      <div class='console-underscore' id='console'>
+        &#95;
+      </div>
+      <br>
+      <a href="/update"> 
+        <button class="learnMore">LEARN MORE</button>
+      </a>
+    </div>
+    <div class="down">
+      <div class="icon">
+        <i class="fa-solid fa-angle-down fa-fade"></i>
+      </div>
+    </div>
+  </div>
+  <div class="info info-1">
+    <div class='blog'>
+      <div class='title'>STARLINK MISSION</div><br>
+      <!-- <a href="/update">  -->
+      <a href="/update/#info-1"> 
+        <button class="learnMore">LEARN MORE</button>
+      </a>
+    </div>
+  </div>
+  <div class="info info-2">
+    <div class='blog' style="margin-bottom: 8rem;">
+      <div class='title'>ADVANCING HUMAN SPACEFLIGHT</div><br>
+      <a href="/update/#info-2"> 
+        <button class="learnMore">LEARN MORE</button>
+      </a>
+    </div>
+  </div>
+  <div class="info info-3">
+    <div class='blog'>
+      <div class='title'>TO MAKE LIFE MULTIPLANETARY</div><br>
+      <a href="/update/#info-3"> 
+        <button class="learnMore">LEARN MORE</button>
+      </a>
+    </div>
+  </div>
+  <%- include('../includes/footer.ejs') %>
+
+  <script src="./app.js"></script>
+</body>

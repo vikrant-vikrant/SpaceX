@@ -1,0 +1,17 @@
+{
+  "name": "spacex",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Vikrant",
+  "license": "ISC",
+  "description": "A Clone of SpaceX web",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "ejs-mate": "^4.0.0",
+    "express": "^4.19.2"
+  }
+}

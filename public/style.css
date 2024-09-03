@@ -1,0 +1,249 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family:sans-serif;
+}
+body{
+  background-color: #000000;
+}
+*::selection{
+  color: black;
+  background-color: white;
+}
+.navbar{
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color:  rgba(255, 255, 255, 0);
+}
+.navbar-brand img{
+  height: 2.5rem;
+  width: 18rem;
+  margin-left: 2rem;
+}
+.navbar-nav{
+  display: flex;
+  align-items: center;
+}
+.navbar-nav a{
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  margin-right: 1.7rem;
+  margin-top: 1rem;
+  position: relative;
+  padding-bottom: 5px;
+}
+/* hover effect */
+.navbar-nav a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+.navbar-nav a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.menu a i{
+  color: white;
+}
+.heropage{
+  background-image: url(./images/w1.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hidden {
+  opacity:0;
+}
+.console-container {
+  font-size:4em;
+  height:200px;
+  width:850px;
+  font-weight: 600;
+  display:block;
+  position:absolute;
+  color:white;
+  bottom:0;
+  margin-left: 5rem;
+  margin-bottom: 4rem;
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+.event p{
+  display: inline-block;
+  font-size: 1.5rem;
+  color: white;
+  font-family: sans-serif;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+.learnMore{
+  height: 5rem;
+  width: 15rem;
+  background-color: transparent;
+  border: 2.5px solid white;  
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  box-shadow: inset 0 0 0 0 #fdfdfd;
+  cursor: pointer;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.learnMore:hover {
+  color: #000000;
+  box-shadow: inset 200px 0 0 0 #ffffff;
+}
+.down{
+  height: 70px;
+  position: absolute;
+  right: 50%;
+  bottom: 4rem;
+}
+.down .icon i{
+  color: white;
+  font-size: 4rem;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction:normal;
+}
+@keyframes example {
+  from {margin-top: 0%;
+  opacity: 1;}
+  to {margin-top: 100%;
+  opacity: 0;}
+}
+.info {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.info-1{
+  background-image: url(./images/w2.jpg);
+}
+.info-2{
+  background-image: url(./images/Eva_Suit_Desktop_alternate_1cf9bae18e.jpg);
+}
+.info-3{
+  background-image: url(./images/w4.jpg);
+}
+.blog {
+  font-size:4em;
+  height:200px; 
+  width:400px;
+  font-weight: 600;
+  display:block;
+  position:absolute;
+  color:white;
+  bottom:0;
+  margin-left: 5rem;
+  margin-bottom: 4rem;
+}
+.title {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+}
+ .footer{
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-color:  #0C0C0C;
+}
+.footer a{
+   text-decoration: none;
+  margin-right: 3rem;
+  font-style: 10px;
+  font-weight: 600;
+  color: white;
+ }
+ .footer a {
+  opacity: 1;
+  transition: opacity .3s linear;
+  cursor: pointer;
+}
+.footer a:hover {
+  opacity: .6;
+}
+/* Learn More Heropage  */
+.LM-heropage{
+  background-image: url(./images/update.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.95;
+}
+.update{
+  color: white;
+  font-weight: 700;
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 35vh;
+}
+.row{
+  width: 70%;
+  margin: 0 15%;
+  color: white;
+}
+.row .rowImg{
+  margin: 6rem 0;
+  height: 80vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+}
+.content .date{
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  display: block;
+}
+.content .lable{
+  text-transform: uppercase;
+  margin: 2rem 0 2rem 0;
+  display: block;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.para p{
+  margin: 1.5rem 0;
+  line-height: 2rem;
+  font-size: 15px;
+}
+.row .rowImg1{
+  background-image: url(/images/FRAM_2_HT_Group_Photos.jpg);
+}
+.row .rowImg2{
+  background-image: url(/images/Eva_Suit_Desktop_alternate_1cf9bae18e.jpg);
+}
+.row .rowImg3{
+  background-image: url(/images/make_life_multiplanetary_desktop_3fa7cff73c.jpg);
+}
+/* //shift this code to heropage */
+
+

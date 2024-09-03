@@ -1,0 +1,19 @@
+<% layout('/layouts/boilerPlate.ejs') -%>
+<title>SpaceX - StarShield</title>
+<style>
+  .heropage{
+    background-image: url(/images/starshield.webp);
+  }
+</style>
+<link rel="stylesheet" href="style copy.css">
+<body>
+  <div class="heropage">
+    <%- include('../includes/navbar.ejs') %>
+    <div class='console-container'>
+      <div class='title'>STARSHIELD
+        </div><br>
+      <div class='subtitle'>Supporting National Security</div>
+    </div>
+  </div>
+  <%- include('../includes/footer.ejs') %>
+</body>

@@ -1,0 +1,19 @@
+<% layout('/layouts/boilerPlate.ejs') -%>
+<title>SpaceX - Human SpaceFlight</title>
+<style>
+  .heropage{
+    background-image: url(/images/HS-hero.webp);
+  }
+</style>
+<link rel="stylesheet" href="style copy.css">
+<body>
+  <div class="heropage">
+    <%- include('../includes/navbar.ejs') %>
+    <div class='console-container'>
+      <div class='title'>Human Spaceflight
+        </div><br>
+      <div class='subtitle'>MAKING LIFE MULTIPLANETARY</div>
+    </div>
+  </div>
+  <%- include('../includes/footer.ejs') %>
+</body>

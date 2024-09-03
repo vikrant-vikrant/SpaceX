@@ -1,0 +1,20 @@
+<% layout('/layouts/boilerPlate.ejs') -%>
+<title>SpaceX - RideShare</title>
+<style>
+  .heropage{
+    background-image: url(/images/rideshare.jpg);
+  }
+</style>
+<link rel="stylesheet" href="style copy.css">
+<body>
+  <div class="heropage">
+    <%- include('../includes/navbar.ejs') %>
+    <div class='console-container'>
+      <div class='title'>
+        Rideshare Program
+        </div><br>
+      <div class='subtitle'>Dedicated Rideshare Missions as Low as $300k*. Search Flights Below.</div>
+    </div>
+  </div>
+  <%- include('../includes/footer.ejs') %>
+</body>
