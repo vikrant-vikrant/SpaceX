@@ -14,13 +14,17 @@ body {
   background-color: white;
 }
 .navbar {
-  width: 96.5vw;
+  width: calc(100vw - 3.3rem);
   padding: 0 1rem 0 1rem;
   height: 11vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(1, 18, 34, 0.6);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  box-shadow: 1px 1px 5px #fff;
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
 }
 .navbar-brand img {
   height: 2.5rem;
@@ -260,7 +264,7 @@ body {
 @media (max-width: 600px) {
   .navbar {
     height: 8vh;
-    width: 90vw;
+    width: calc(100vw - 1.9rem);
     display: flex;
     justify-content: center;
   }
