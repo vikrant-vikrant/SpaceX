@@ -1,18 +1,13 @@
 <% layout('/layouts/boilerPlate.ejs') -%>
 <title>SpaceX Falcon - 9</title>
-<style>
-  .heropage {
-    background-image: url(/images/f9_feature.jpg);
-  }
-</style>
-<link rel="stylesheet" href="style copy.css" />
+<link rel="stylesheet" href="style.css" />
 <body>
-  <div class="heropage">
+  <div class="heropage" style="background-image: url(/images/f9_feature.jpg)">
     <%- include('../includes/navbar.ejs') %>
-    <div class="console-container">
-      <div class="title">FALCON 9</div>
+    <div class="heading-container">
+      <div class="heading">FALCON 9</div>
       <br />
-      <div class="subtitle">First Orbital Class Rocket Capable of Reflight</div>
+      <div class="subheading">First Orbital Class Rocket Capable of Reflight</div>
     </div>
   </div>
   <%- include('../includes/footer.ejs') %>

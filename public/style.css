@@ -3,6 +3,9 @@
   padding: 0px;
   font-family: sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #0c0c0c;
 }
@@ -11,7 +14,7 @@ body {
   background-color: white;
 }
 .navbar {
-  width: 95vw;
+  width: 96.5vw;
   padding: 0 1rem 0 1rem;
   height: 11vh;
   display: flex;
@@ -155,7 +158,25 @@ body {
 .title {
   display: inline-block;
   position: relative;
-  top: -0.14em;
+}
+.heading-container {
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.heading {
+  font-size: 6rem;
+  font-weight: 800;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+}
+.subheading {
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 .footer {
   height: 6rem;
