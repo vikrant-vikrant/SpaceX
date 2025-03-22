@@ -1,10 +1,10 @@
 <% layout('/layouts/boilerPlate') -%>
 <link rel="stylesheet" href="/style.css" />
-
 <title>SpaceX - Updates</title>
 <body>
   <div class="LM-heropage heropage">
-    <nav>
+    <%- include('../includes/navbar.ejs') %>
+    <!-- <nav>
       <div class="navbar">
         <div class="logo">
           <a title="SpaceX Logo" class="navbar-brand" href="/home"
@@ -26,7 +26,7 @@
           <a href="#" class="nav-link"><i class="fa-solid fa-bars"></i></a>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <div class="update">UPDATES</div>
     <div class="down">
       <div class="icon">
@@ -183,4 +183,5 @@
       </div>
     </div>
   </div>
+  <%- include('../includes/footer.ejs') %>
 </body>

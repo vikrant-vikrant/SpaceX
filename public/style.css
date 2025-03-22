@@ -4,7 +4,7 @@
   font-family: sans-serif;
 }
 body {
-  background-color: #d20e0e;
+  background-color: #0c0c0c;
 }
 *::selection {
   color: black;
@@ -70,7 +70,8 @@ body {
 .hidden {
   opacity: 0;
 }
-.console-container {
+.console-container,
+.blog {
   font-size: 4vw;
   font-weight: 600;
   position: absolute;
@@ -81,8 +82,6 @@ body {
 .console-underscore {
   display: inline-block;
   position: relative;
-  /* top: -0.14em; */
-  /* left: 10px; */
 }
 .event p {
   display: inline-block;
@@ -115,7 +114,7 @@ body {
   right: 48%;
   bottom: 16vh;
 }
-.down  i {
+.down i {
   color: #294959b9;
   font-size: 4vw;
   animation-name: example;
@@ -150,16 +149,8 @@ body {
   background-image: url(./images/w4.jpg);
 }
 .blog {
-  font-size: 4em;
-  height: 200px;
-  width: 400px;
-  font-weight: 600;
   display: block;
-  position: absolute;
-  color: white;
-  bottom: 0;
-  margin-left: 5rem;
-  margin-bottom: 4rem;
+  width: 30%;
 }
 .title {
   display: inline-block;
@@ -167,7 +158,6 @@ body {
   top: -0.14em;
 }
 .footer {
-  width: 100%;
   height: 6rem;
   display: flex;
   align-items: center;
@@ -201,19 +191,18 @@ body {
 .update {
   color: white;
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 6vw;
   text-align: center;
   margin-top: 35vh;
 }
 .row {
-  width: 70%;
-  margin: 0 15%;
+  width: 80%;
+  margin: 0 10%;
   color: white;
 }
 .row .rowImg {
   margin: 6rem 0;
   height: 80vh;
-  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -234,7 +223,7 @@ body {
 .para p {
   margin: 1.5rem 0;
   line-height: 2rem;
-  font-size: 15px;
+  font-size: 1.3rem;
 }
 .row .rowImg1 {
   background-image: url(/images/FRAM_2_HT_Group_Photos.jpg);
@@ -250,6 +239,7 @@ body {
 @media (max-width: 600px) {
   .navbar {
     height: 8vh;
+    width: 90vw;
     display: flex;
     justify-content: center;
   }
@@ -271,7 +261,8 @@ body {
     font-size: 4vw;
     margin-bottom: 2vh;
   }
-  .console-container {
+  .console-container,
+  .blog {
     font-size: 8vw;
     font-weight: 600;
     position: absolute;
@@ -285,7 +276,33 @@ body {
     border: 2px solid white;
     font-size: 2vh;
   }
-  .down i{
+  .down i {
     font-size: 4vh;
+  }
+  .blog {
+    display: block;
+    width: 30%;
+  }
+  .update {
+    font-size: 15vw;
+  }
+  .row {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .row .rowImg {
+    height: 30vh;
+    margin: 3rem 0;
+  }
+  .content .date {
+    font-size: 1.2rem;
+  }
+  .content .lable {
+    margin: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+  }
+  .para p {
+    line-height: 1.5rem;
+    font-size: 1rem;
   }
 }
