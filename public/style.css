@@ -253,12 +253,14 @@ body {
 /* Responsivness */
 @media (max-width: 600px) {
   .navbar {
-    height: 10vh;
+    height: 8vh;
     display: flex;
     justify-content: center;
   }
   .navbar-brand img {
     width: 25vw;
+    height: 4vh;
+    margin-left: 0;
   }
   .navbar-nav a {
     display: none;
@@ -266,7 +268,6 @@ body {
   .menu a i {
     font-size: 2rem;
     color: white;
-    /* font-size: 6vw; */
     display: inline;
     padding: 1rem;
   }
