@@ -22,7 +22,7 @@ body {
   justify-content: space-between;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
-  box-shadow: 1px 1px 5px #fff;
+  box-shadow: 1px 0 5px #fff;
   border-bottom-left-radius: 0.7rem;
   border-bottom-right-radius: 0.7rem;
 }
@@ -63,8 +63,18 @@ body {
   transform-origin: left;
   transform: scaleX(1);
 }
-.menu a i {
+.navbar input[type="checkbox"] {
   display: none;
+}
+.navbar .hamburger-menu i {
+  display: none;
+  position: absolute;
+  right: 8vw;
+  top: 0.9rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2rem;
+  transition: 0.3s;
 }
 .heropage {
   background-image: url(./images/w1.jpg);
@@ -172,15 +182,59 @@ body {
   color: #fff;
 }
 .heading {
-  font-size: 6rem;
+  font-size: 6vw;
   font-weight: 800;
   display: inline-block;
   position: relative;
   text-transform: uppercase;
 }
 .subheading {
-  font-size: 1rem;
+  font-size: 1.5vw;
   text-transform: uppercase;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 50vw;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(100px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.sidebar a {
+  width: 100%;
+  color: #d1d1d1;
+  font-size: 2vh;
+  font-weight: 700;
+  padding: 1.5vh 0vh 1.5vh 5vw;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  background-color: #ffffff29;
+}
+.sidebar .cross {
+  padding: 2.5rem;
+}
+.sidebar a .xmark {
+  color: #b3b3b3ac;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  right: 8vw;
+  top: 0.9rem;
+}
+.xmark:hover {
+  color: #ffffff;
 }
 .footer {
   height: 6rem;
@@ -276,11 +330,11 @@ body {
   .navbar-nav a {
     display: none;
   }
-  .navbar-nav .menu a i {
-    font-size: 1.5vw;
-    color: white;
-    display: inline;
-    padding: 1rem;
+  .navbar .hamburger-menu i {
+    display: flex;
+  }
+  .navbar .hamburger-menu i:hover {
+    color: #b3b3b3ac;
   }
   .event p {
     font-size: 4vw;
@@ -329,5 +383,17 @@ body {
   .para p {
     line-height: 1.5rem;
     font-size: 1rem;
+  }
+  .heading {
+    font-size: 14vw;
+  }
+  .subheading {
+    font-size: 3vw;
+  }
+  .navbar input[type="checkbox"]:checked ~ .sidebar {
+    display: flex;
+  }
+  .navbar input[type="checkbox"]:checked ~ .hamburger-menu {
+    display: none;
   }
 }
