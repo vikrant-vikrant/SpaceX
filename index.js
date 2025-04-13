@@ -43,5 +43,5 @@ app.get("/starlink", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log("App is listing to port : 8080");
+  console.log(`App is listing to port :${PORT}`);
 });
