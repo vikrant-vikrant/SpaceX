@@ -1,5 +1,5 @@
 {
-  "start": "node app.js",
+  "start": "node index.js",
   "engines": {
     "node": "20.15.0"
   },
