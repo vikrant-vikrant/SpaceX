@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-
+const PORT = process.env.PORT || 8080;
 const path = require("path");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
@@ -42,6 +42,6 @@ app.get("/starlink", (req, res) => {
   res.render("listings/starlink.ejs");
 });
 
-app.listen(8080, () => {
+app.listen(PORT, () => {
   console.log("App is listing to port : 8080");
 });
