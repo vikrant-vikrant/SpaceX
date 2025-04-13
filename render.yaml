@@ -1,0 +1,29 @@
+# Exported from Render on 2025-04-13T07:57:32Z
+services:
+- type: web
+  name: SpaceX
+  runtime: node
+  repo: https://github.com/vikrant-vikrant/SpaceX
+  plan: free
+  envVars:
+  - key: SECRET
+    sync: false
+  - key: ATLASDB_URL
+    sync: false
+  - key: STYLE_ID
+    sync: false
+  - key: MAP_TOKEN
+    sync: false
+  - key: CLOUDINARY_URL
+    sync: false
+  - key: CLOUD_NAME
+    sync: false
+  - key: CLOUD_API_SECRET
+    sync: false
+  - key: CLOUD_API_KEY
+    sync: false
+  region: oregon
+  buildCommand: npm install
+  startCommand: node index.js
+  autoDeploy: false
+version: "1"
