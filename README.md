@@ -14,8 +14,8 @@ This project is a modern clone of the official SpaceX website designed to showca
 
 ## Built With 🛠️
 
-- **Frontend:** HTML5, CSS3, JavaScript, EJS
-- **Backend:** Node.js, Express.js
+- **Frontend:** HTML5, CSS3, JavaScript, EJS, ejs-mate,
+- **Backend:** Express.js
 - **Templating Engine:** EJS (Embedded JavaScript)
 - **Deployment:** Render
 - **Version Control:** Git & GitHub
@@ -24,3 +24,4 @@ This project is a modern clone of the official SpaceX website designed to showca
 ## 🖼️ Preview
 ![image](./public/images/home.png)
 ![image](./public/images/pic.png)
+![alt text](./public/images/image.png)
