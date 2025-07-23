@@ -1,3 +1,8 @@
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("body"),
+  smooth: true,
+});
+
 consoleText(
   [
     "POLARIS DAWN",

@@ -8,8 +8,7 @@ This project is a modern clone of the official SpaceX website designed to showca
 - **Responsive Design :** Optimized for mobile, tablet, and desktop.
 - **Dynamic Content :** Utilizes dynamic routing to present updated SpaceX launch information.
 - **Interactive UI Elements :** Engaging visuals and animations similar to the original site.
-- **Server-Side Rendering :** Uses EJS templates for efficient rendering.
-- **RESTful API Integration :** Seamlessly fetches and displays real-time data.
+- **Smooth scrolling :** Uses Locomotive Scroll for smooth scrolling.
 - **Modern Styling :** Custom CSS with a maintainable, clean codebase.
 
 ## Built With 🛠️
